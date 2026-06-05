@@ -10,6 +10,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 from box.exceptions import BoxValueError, BoxKeyError
+from typing import List
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -41,12 +42,12 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
 
 
 @ensure_annotations
-def create_directories(path_to_directories: list) -> None:
+def create_directories(path_to_directories: List[Path]) -> None:
     """
     Creates directories from a list of directory paths.
 
     Args:
-        path_to_directories (list): A list of directory paths to be created.
+        path_to_directories (List[Path]): A list of directory paths to be created.
     Returns:
         None
     Raises:       OSError: If there is an error creating any of the directories.
@@ -136,7 +137,7 @@ def save_bin(data: Any, path: Path) -> None:
         raise e
     
 @ensure_annotations
-def load_bin(path: Path) -> Any:
+def load_bin(path: Path) -> ConfigBox:
     """
     Loads data from a binary file using joblib.
 
@@ -159,3 +160,4 @@ def load_bin(path: Path) -> Any:
         logger.error(f"Data provided cannot be deserialized by joblib: {e}")
         raise e
     
+ 

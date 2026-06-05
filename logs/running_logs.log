@@ -1,1 +1,190 @@
 [2026-06-03 12:27:32,103: INFO: main]: welcome to custom logging data sccience
+[2026-06-04 23:43:06,247: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D2F1D7D750> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_30768\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_30768\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D2F1D7D750> does not match annotation type <class 'pathlib.Path'>
+[2026-06-04 23:44:06,311: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D2F1D7D750> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_30768\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_30768\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D2F1D7D750> does not match annotation type <class 'pathlib.Path'>
+[2026-06-05 12:22:04,617: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+[2026-06-05 14:44:28,944: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+[2026-06-05 14:58:29,720: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+[2026-06-05 14:58:33,346: ERROR: 3073152026]: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 6, in __init__
+    self.config=read_yaml(config_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x0000023698F556C0> does not match annotation type <class 'pathlib.Path'>
+[2026-06-05 15:03:25,684: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:03:25,691: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:03:25,695: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:03:25,709: ERROR: 3073152026]: The YAML file is empty: schema.yaml
+Traceback (most recent call last):
+  File "e:\Udemy\datascienceproject\src\datascience\utils\common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 301, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 8, in __init__
+    self.schema=read_yaml(schema_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\Udemy\datascienceproject\src\datascience\utils\common.py", line 36, in read_yaml
+    raise ValueError(f"The YAML file is empty: {path_to_yaml}")
+ValueError: The YAML file is empty: schema.yaml
+[2026-06-05 15:04:01,466: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:04:01,468: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:04:01,471: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:04:01,472: ERROR: 3073152026]: The YAML file is empty: schema.yaml
+Traceback (most recent call last):
+  File "e:\Udemy\datascienceproject\src\datascience\utils\common.py", line 34, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 301, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 8, in __init__
+    self.schema=read_yaml(schema_filepath)
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "e:\Udemy\datascienceproject\src\datascience\utils\common.py", line 36, in read_yaml
+    raise ValueError(f"The YAML file is empty: {path_to_yaml}")
+ValueError: The YAML file is empty: schema.yaml
+[2026-06-05 15:07:50,543: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:07:50,551: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:07:50,561: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:07:50,569: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:07:50,573: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:08:14,233: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:08:14,240: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:08:14,248: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:08:14,254: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:08:14,255: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:08:42,126: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:08:42,130: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:08:42,138: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:08:42,143: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:08:42,145: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\2214064951.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:16:36,751: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:16:36,757: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:16:36,764: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:16:36,769: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:16:36,772: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\1161676438.py", line 10, in __init__
+    create_directories([Path(self.config.artifacts_root)])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:16:45,035: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:16:45,039: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:16:45,045: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:16:45,051: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:16:45,054: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\1161676438.py", line 10, in __init__
+    create_directories([Path(self.config.artifacts_root)])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:16:45,847: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:16:45,851: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:16:45,859: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:16:45,865: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:16:45,868: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\1161676438.py", line 10, in __init__
+    create_directories([Path(self.config.artifacts_root)])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-05 15:35:19,558: INFO: common]: Successfully read YAML file: config\config.yaml
+[2026-06-05 15:35:19,563: INFO: common]: Successfully read YAML file: params.yaml
+[2026-06-05 15:35:19,570: INFO: common]: Successfully read YAML file: schema.yaml
+[2026-06-05 15:35:19,573: INFO: common]: Directory created successfully: artifacts
+[2026-06-05 15:35:19,576: ERROR: 3073152026]: isinstance() arg 2 must be a type, a tuple of types, or a union
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\3073152026.py", line 2, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_28692\1161676438.py", line 10, in __init__
+    create_directories([Path(self.config.artifacts_root)])
+  File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
