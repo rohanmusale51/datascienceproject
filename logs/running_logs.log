@@ -188,3 +188,4 @@ Traceback (most recent call last):
   File "e:\Udemy\datascienceproject\venv\lib\site-packages\ensure\main.py", line 873, in __call__
     if not isinstance(return_val, self.return_templ):
 TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2026-06-06 12:50:11,437: INFO: main]: welcome to custom logging data sccience
