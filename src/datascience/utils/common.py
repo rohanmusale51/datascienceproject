@@ -1,6 +1,4 @@
 import os
-from mlflow import data
-from mlflow import data
 import yaml
 from src.datascience import logger
 import json
@@ -9,155 +7,98 @@ from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
-from box.exceptions import BoxValueError, BoxKeyError
-from typing import List
+from box.exceptions import BoxValueError
+
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
-    """
-    Reads a YAML file and returns its contents as a ConfigBox object.
+    """reads yaml file and returns
 
     Args:
-        path_to_yaml (Path): The file path to the YAML file.
-    Returns:
-        ConfigBox: A ConfigBox object containing the contents of the YAML file.
+        path_to_yaml (str): path like input
+
     Raises:
-        FileNotFoundError: If the specified YAML file does not exist.
-        yaml.YAMLError: If there is an error parsing the YAML file.
+        ValueError: if yaml file is empty
+        e: empty file
+
+    Returns:
+        ConfigBox: ConfigBox type
     """
-    if not os.path.exists(path_to_yaml):
-        raise FileNotFoundError(f"The specified YAML file does not exist: {path_to_yaml}")
-    
     try:
-        with open(path_to_yaml, 'r') as yaml_file:
+        with open(path_to_yaml) as yaml_file:
             content = yaml.safe_load(yaml_file)
-            logger.info(f"Successfully read YAML file: {path_to_yaml}")
+            logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
     except BoxValueError:
-        raise ValueError(f"The YAML file is empty: {path_to_yaml}")
-    
-    except yaml.YAMLError as e:
-        logger.error(f"Error parsing YAML file: {e}")
+        raise ValueError("yaml file is empty")
+    except Exception as e:
         raise e
+        
 
 
 @ensure_annotations
-def create_directories(path_to_directories: List[Path]) -> None:
-    """
-    Creates directories from a list of directory paths.
+def create_directories(path_to_directories: list, verbose=True):
+    """create list of directories
 
     Args:
-        path_to_directories (List[Path]): A list of directory paths to be created.
-    Returns:
-        None
-    Raises:       OSError: If there is an error creating any of the directories.
+        path_to_directories (list): list of path of directories
+        ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
     """
     for path in path_to_directories:
-        try:
-            os.makedirs(path, exist_ok=True)
-            logger.info(f"Directory created successfully: {path}")
-        except OSError as e:
-            logger.error(f"Error creating directory {path}: {e}")
-            raise e
+        os.makedirs(path, exist_ok=True)
+        if verbose:
+            logger.info(f"created directory at: {path}")
 
 @ensure_annotations
-def save_json(path: Path, data: dict) -> None:
-    """
-    Saves a dictionary as a JSON file.
+def save_json(path: Path, data: dict):
+    """save json data
 
     Args:
-        path (Path): The file path where the JSON file will be saved.
-        data (dict): The dictionary to be saved as JSON.
-    Returns:
-        None
-    Raises:
-        OSError: If there is an error writing to the file.
-        TypeError: If the data provided is not serializable to JSON.
+        path (Path): path to json file
+        data (dict): data to be saved in json file
     """
-    try:
-        with open(path, 'w') as json_file:
-            json.dump(data, json_file, indent=4)
-            logger.info(f"Data successfully saved to JSON file: {path}")
-    except OSError as e:
-        logger.error(f"Error writing to file {path}: {e}")
-        raise e
-    except TypeError as e:
-        logger.error(f"Data provided is not serializable to JSON: {e}")
-        raise e
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+
+    logger.info(f"json file saved at: {path}")
 
 @ensure_annotations
-
-def load_json(path: Path) -> dict:
-    """
-    Loads a JSON file and returns its contents as a dictionary.
+def load_json(path: Path) -> ConfigBox:
+    """load json files data
 
     Args:
-        path (Path): The file path to the JSON file.
+        path (Path): path to json file
+
     Returns:
-        dict: A dictionary containing the contents of the JSON file.
-    Raises:
-        FileNotFoundError: If the specified JSON file does not exist.
-        json.JSONDecodeError: If there is an error parsing the JSON file.
+        ConfigBox: data as class attributes instead of dict
     """
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"The specified JSON file does not exist: {path}")
-    
-    try:
-        with open(path, 'r') as json_file:
-            content = json.load(json_file)
-            logger.info(f"Successfully loaded JSON file: {path}")
-            return ConfigBox(content)
-        
-    except json.JSONDecodeError as e:
-        logger.error(f"Error parsing JSON file: {e}")
-        raise e
+    with open(path) as f:
+        content = json.load(f)
+
+    logger.info(f"json file loaded succesfully from: {path}")
+    return ConfigBox(content)
 
 @ensure_annotations
-def save_bin(data: Any, path: Path) -> None:
-    """
-    Saves data to a binary file using joblib.
+def save_bin(data: Any, path: Path):
+    """save binary file
 
     Args:
-        data (Any): The data to be saved.
-        path (Path): The file path where the binary file will be saved.
-    Returns:
-        None
-    Raises:
-        OSError: If there is an error writing to the file.
-        TypeError: If the data provided cannot be serialized by joblib.
+        data (Any): data to be saved as binary
+        path (Path): path to binary file
     """
-    try:
-        joblib.dump(data, path)
-        logger.info(f"Data successfully saved to binary file: {path}")
-    except OSError as e:
-        logger.error(f"Error writing to file {path}: {e}")
-        raise e
-    except TypeError as e:
-        logger.error(f"Data provided cannot be serialized by joblib: {e}")
-        raise e
-    
+    joblib.dump(value=data, filename=path)
+    logger.info(f"binary file saved at: {path}")
+
 @ensure_annotations
-def load_bin(path: Path) -> ConfigBox:
-    """
-    Loads data from a binary file using joblib.
+def load_bin(path: Path) -> Any:
+    """load binary data
 
     Args:
-        path (Path): The file path to the binary file.
-    Returns:
-        Any: The data loaded from the binary file.
-    Raises:
-        FileNotFoundError: If the specified binary file does not exist.
-        TypeError: If the data provided cannot be deserialized by joblib.
-    """
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"The specified binary file does not exist: {path}")
+        path (Path): path to binary file
 
-    try:
-        data = joblib.load(path)
-        logger.info(f"Data successfully loaded from binary file: {path}")
-        return data
-    except TypeError as e:
-        logger.error(f"Data provided cannot be deserialized by joblib: {e}")
-        raise e
-    
- 
+    Returns:
+        Any: object stored in the file
+    """
+    data = joblib.load(path)
+    logger.info(f"binary file loaded from: {path}")
+    return data
