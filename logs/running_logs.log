@@ -246,3 +246,9 @@ Source-Age: 0
 
 
 [2026-06-06 19:23:32,912: WARNING: 2033234028]: File already exists of path: artifacts/data_ingestion
+[2026-06-07 12:43:56,173: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-07 12:43:56,179: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-07 12:43:56,184: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-07 12:43:56,186: INFO: common]: created directory at: artifacts
+[2026-06-07 12:43:56,189: INFO: common]: created directory at: artifacts/data_ingestion
+[2026-06-07 12:43:56,192: INFO: 251335794]: File already exists
