@@ -297,3 +297,56 @@ Source-Age: 0
 [2026-06-07 20:36:20,142: INFO: main]: >>>>>> stage Data Ingestion Stage completed <<<<<<
 
 x==========x
+[2026-06-08 15:42:15,404: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-08 15:42:15,413: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-08 15:42:15,419: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-08 15:42:15,427: INFO: common]: created directory at: artifacts
+[2026-06-08 15:42:15,430: INFO: common]: created directory at: artifacts/data_validation
+[2026-06-08 22:07:46,505: INFO: main]: welcome to custom logging data sccience
+[2026-06-08 22:07:46,505: INFO: main]: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-06-08 22:07:46,511: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-08 22:07:46,512: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-08 22:07:46,515: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-08 22:07:46,516: INFO: common]: created directory at: artifacts
+[2026-06-08 22:07:46,517: INFO: common]: created directory at: artifacts/data_ingestion
+[2026-06-08 22:07:46,518: INFO: data_ingestion]: File already exists
+[2026-06-08 22:07:46,524: INFO: main]: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-06-08 22:07:46,524: INFO: main]: >>>>>> stage Data Validation stage started <<<<<<
+[2026-06-08 22:07:46,528: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-08 22:07:46,529: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-08 22:07:46,533: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-08 22:07:46,534: INFO: common]: created directory at: artifacts
+[2026-06-08 22:07:46,535: INFO: common]: created directory at: artifacts/data_validation
+[2026-06-08 22:07:46,535: ERROR: main]: name 'pd' is not defined
+Traceback (most recent call last):
+  File "E:\Udemy\datascienceproject\main.py", line 24, in <module>
+    data_ingestion.initiate_data_validation()
+  File "E:\Udemy\datascienceproject\src\datascience\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "E:\Udemy\datascienceproject\src\datascience\components\data_validation.py", line 33, in validate_all_columns
+    raise e
+  File "E:\Udemy\datascienceproject\src\datascience\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+NameError: name 'pd' is not defined
+[2026-06-08 22:11:58,525: INFO: main]: welcome to custom logging data sccience
+[2026-06-08 22:11:58,525: INFO: main]: >>>>>> stage Data Ingestion Stage started <<<<<<
+[2026-06-08 22:11:58,529: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-08 22:11:58,530: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-08 22:11:58,533: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-08 22:11:58,535: INFO: common]: created directory at: artifacts
+[2026-06-08 22:11:58,536: INFO: common]: created directory at: artifacts/data_ingestion
+[2026-06-08 22:11:58,536: INFO: data_ingestion]: File already exists
+[2026-06-08 22:11:58,539: INFO: main]: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+[2026-06-08 22:11:58,540: INFO: main]: >>>>>> stage Data Validation stage started <<<<<<
+[2026-06-08 22:11:58,550: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-08 22:11:58,556: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-08 22:11:58,559: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-08 22:11:58,561: INFO: common]: created directory at: artifacts
+[2026-06-08 22:11:58,562: INFO: common]: created directory at: artifacts/data_validation
+[2026-06-08 22:11:58,585: INFO: main]: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
