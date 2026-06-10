@@ -448,3 +448,305 @@ x==========x
 [2026-06-09 18:59:28,367: INFO: main]: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x
+[2026-06-09 21:25:19,374: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:25:19,379: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:25:19,385: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:25:19,389: INFO: common]: created directory at: artifacts
+[2026-06-09 21:26:24,858: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:26:24,863: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:26:24,869: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:26:24,873: INFO: common]: created directory at: artifacts
+[2026-06-09 21:32:10,488: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:32:11,249: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:32:11,394: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:32:11,396: INFO: common]: created directory at: artifacts
+[2026-06-09 21:34:27,500: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:34:27,504: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:34:27,509: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:34:27,512: INFO: common]: created directory at: artifacts
+[2026-06-09 21:34:27,514: ERROR: 4083503691]: "'ConfigBox' object has no attribute 'elasticnet'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4083503691.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4222484733.py", line 17, in get_model_trainer_config
+    params = self.params.elasticnet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+[2026-06-09 21:37:20,911: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:37:20,915: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:37:20,923: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:37:20,927: INFO: common]: created directory at: artifacts
+[2026-06-09 21:37:20,930: ERROR: 4080462714]: "'ConfigBox' object has no attribute 'elasticnet'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4080462714.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4222484733.py", line 17, in get_model_trainer_config
+    params = self.params.elasticnet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+[2026-06-09 21:37:25,071: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:37:25,075: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:37:25,082: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:37:25,086: INFO: common]: created directory at: artifacts
+[2026-06-09 21:37:25,088: ERROR: 4080462714]: "'ConfigBox' object has no attribute 'elasticnet'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4080462714.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4222484733.py", line 17, in get_model_trainer_config
+    params = self.params.elasticnet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+[2026-06-09 21:38:12,440: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:38:12,445: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:38:12,452: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:38:12,456: INFO: common]: created directory at: artifacts
+[2026-06-09 21:38:12,459: ERROR: 4080462714]: "'ConfigBox' object has no attribute 'elasticnet'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\4080462714.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\1814647815.py", line 17, in get_model_trainer_config
+    params = self.params.ElasticNet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+[2026-06-09 21:38:36,146: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2026-06-09 21:38:36,151: INFO: common]: yaml file: params.yaml loaded successfully
+[2026-06-09 21:38:36,158: INFO: common]: yaml file: schema.yaml loaded successfully
+[2026-06-09 21:38:36,161: INFO: common]: created directory at: artifacts
+[2026-06-09 21:38:36,163: ERROR: 1787165794]: "'ConfigBox' object has no attribute 'elasticnet'"
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\1787165794.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\LENOVO\AppData\Local\Temp\ipykernel_34056\1814647815.py", line 17, in get_model_trainer_config
+    params = self.params.ElasticNet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
